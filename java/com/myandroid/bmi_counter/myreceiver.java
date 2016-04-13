@@ -23,8 +23,8 @@ public class myreceiver extends BroadcastReceiver {
         String bmi="";
         bmi=format(weight/((height/100)*(height/100)));
 
-        Toast.makeText(context, "Hello! your BMI is : ", Toast.LENGTH_SHORT).show();
-        Toast.makeText(context, bmi, Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "Hello! your BMI is : "+ bmi, Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, bmi, Toast.LENGTH_LONG).show();
     }
     //四捨五入用
     private String format(double num) {
